@@ -53,8 +53,8 @@ loss_list.append(losses)
 
 alpha = 0.75
 bars = np.add(win_list, loss_list).tolist()
-win_list[0] += 11
-loss_list[0] -= 11
+win_list[0] += 6
+loss_list[0] -= 6
 print(win_list)
 
 

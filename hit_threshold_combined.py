@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-win_table = [51.61744492737472]
-loss_table = [39.5070767859133]
+# win_table = [51.61744492737472]
+# loss_table = [39.5070767859133]
+
+win_table = [48.396006055799866]
+loss_table = [43.740465719847165]
 draw_table = [100 - win_table[0] - loss_table[0]]
 
 win_basic = [44.853]
@@ -11,7 +14,7 @@ draw_basic = [100 - loss_basic[0] - win_basic[0]]
 
 
 print(win_basic[0] + loss_basic[0] + draw_basic[0])
-x = ["15 i Terskel", "Tabellmetode"]
+x = ["15 i Terskel", "Tabellstrategi"]
 
 win_list = win_basic + win_table
 loss_list = loss_basic + loss_table
@@ -30,5 +33,5 @@ plt.bar(x, loss_list, bottom=win_list, color="r", alpha=alpha)
 plt.bar(x, draw_list, bottom=bars, color="b", alpha=alpha)
 plt.legend(["Vinn", "Tap", "Likt"], loc="upper left")
 plt.ylabel("Prosent sjanse %")
-plt.suptitle("15 i Terskel vs Tabellmetode")
+plt.suptitle("15 i Terskel vs Tabellstrategi")
 plt.show()
